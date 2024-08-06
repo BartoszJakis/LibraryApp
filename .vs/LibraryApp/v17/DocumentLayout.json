@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\48534\\LibraryApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{86AE968C-882E-4947-B7CB-B12906992A5A}|LibraryApp.csproj|c:\\users\\48534\\libraryapp\\models\\bookcopy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{86AE968C-882E-4947-B7CB-B12906992A5A}|LibraryApp.csproj|solutionrelative:models\\bookcopy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{86AE968C-882E-4947-B7CB-B12906992A5A}|LibraryApp.csproj|c:\\users\\48534\\libraryapp\\data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86AE968C-882E-4947-B7CB-B12906992A5A}|LibraryApp.csproj|solutionrelative:data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{86AE968C-882E-4947-B7CB-B12906992A5A}|LibraryApp.csproj|c:\\users\\48534\\libraryapp\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{86AE968C-882E-4947-B7CB-B12906992A5A}|LibraryApp.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{86AE968C-882E-4947-B7CB-B12906992A5A}|LibraryApp.csproj|c:\\users\\48534\\libraryapp\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86AE968C-882E-4947-B7CB-B12906992A5A}|LibraryApp.csproj|solutionrelative:models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{86AE968C-882E-4947-B7CB-B12906992A5A}|LibraryApp.csproj|c:\\users\\48534\\libraryapp\\models\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{86AE968C-882E-4947-B7CB-B12906992A5A}|LibraryApp.csproj|solutionrelative:models\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{86AE968C-882E-4947-B7CB-B12906992A5A}|LibraryApp.csproj|c:\\users\\48534\\libraryapp\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{86AE968C-882E-4947-B7CB-B12906992A5A}|LibraryApp.csproj|solutionrelative:models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{86AE968C-882E-4947-B7CB-B12906992A5A}|LibraryApp.csproj|c:\\users\\48534\\libraryapp\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86AE968C-882E-4947-B7CB-B12906992A5A}|LibraryApp.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86AE968C-882E-4947-B7CB-B12906992A5A}|LibraryApp.csproj|c:\\users\\48534\\libraryapp\\models\\bookcopy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86AE968C-882E-4947-B7CB-B12906992A5A}|LibraryApp.csproj|solutionrelative:models\\bookcopy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{86AE968C-882E-4947-B7CB-B12906992A5A}|LibraryApp.csproj|c:\\users\\48534\\libraryapp\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -25,6 +29,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{86AE968C-882E-4947-B7CB-B12906992A5A}|LibraryApp.csproj|c:\\users\\48534\\libraryapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{86AE968C-882E-4947-B7CB-B12906992A5A}|LibraryApp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86AE968C-882E-4947-B7CB-B12906992A5A}|LibraryApp.csproj|c:\\users\\48534\\libraryapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{86AE968C-882E-4947-B7CB-B12906992A5A}|LibraryApp.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,20 +58,46 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\48534\\LibraryApp\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\48534\\LibraryApp\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-06T13:36:29.35Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "DataContext.cs",
+              "DocumentMoniker": "C:\\Users\\48534\\LibraryApp\\Data\\DataContext.cs",
+              "RelativeDocumentMoniker": "Data\\DataContext.cs",
+              "ToolTip": "C:\\Users\\48534\\LibraryApp\\Data\\DataContext.cs*",
+              "RelativeToolTip": "Data\\DataContext.cs*",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAtwB0AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T13:35:38.101Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "BookCopy.cs",
               "DocumentMoniker": "C:\\Users\\48534\\LibraryApp\\Models\\BookCopy.cs",
               "RelativeDocumentMoniker": "Models\\BookCopy.cs",
               "ToolTip": "C:\\Users\\48534\\LibraryApp\\Models\\BookCopy.cs",
               "RelativeToolTip": "Models\\BookCopy.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-06T12:51:02.078Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Book.cs",
               "DocumentMoniker": "C:\\Users\\48534\\LibraryApp\\Models\\Book.cs",
               "RelativeDocumentMoniker": "Models\\Book.cs",
@@ -89,20 +123,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\48534\\LibraryApp\\Models\\User.cs",
               "RelativeDocumentMoniker": "Models\\User.cs",
               "ToolTip": "C:\\Users\\48534\\LibraryApp\\Models\\User.cs",
               "RelativeToolTip": "Models\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-06T12:17:53.08Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "ErrorViewModel.cs",
               "DocumentMoniker": "C:\\Users\\48534\\LibraryApp\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
@@ -115,13 +149,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\48534\\LibraryApp\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\48534\\LibraryApp\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-06T12:15:07.416Z",
               "EditorCaption": ""

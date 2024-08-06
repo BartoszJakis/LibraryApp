@@ -1,5 +1,54 @@
-﻿################################################################################
-# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
-################################################################################
+﻿# Pliki systemowe
+.DS_Store
+Thumbs.db
 
-/.vs/LibraryApp/FileContentIndex
+# Pliki użytkownika
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Pliki kompilacji
+bin/
+obj/
+[Bb]uild/
+[Ll]og/
+[Ll]ogs/
+
+# Pliki tymczasowe
+*.tmp
+*.temp
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+
+# Pliki konfiguracji IDE
+.vs/
+.vscode/
+.idea/
+
+# Pliki NuGet
+*.nupkg
+*.snupkg
+*.nuspec
+packages/
+
+# Pliki PDB
+*.pdb
+
+# Pliki autoryzacji
+*.pubxml
+*.publishsettings
+
+# Pliki lokalne użytkownika
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.csproj.user
+
+# Pliki i katalogi stworzone przez .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
