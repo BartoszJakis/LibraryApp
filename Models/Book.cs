@@ -10,8 +10,9 @@
 
         public string ISBN { get; set; }
 
+        public string Description { get; set; }
 
-        public List<BookCopy> bookCopies { get; set; }
+        public ICollection<BookCopy> BookCopies { get; set; } = new List<BookCopy>();
 
     }
 }

@@ -11,8 +11,11 @@
 
         public int BookId { get; set; }
 
-        public int UserId { get; set; }
+    
+      
 
-        public User User { get; set; }
+        public ICollection<User_BookCopy> User_BookCopies { get; set; } = new List<User_BookCopy>();
+
+       
     }
 }

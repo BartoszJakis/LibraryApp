@@ -12,9 +12,9 @@
 
         public string PhoneNumber { get; set; }
 
-        public BookCopy BookCopy { get; set; }
-
-        public int BookCopyId { get; set; }
+        
+        public ICollection<User_BookCopy>User_BookCopies { get; set; } = new List<User_BookCopy>();
+        
 
         public UserRole role { get; set; } = UserRole.User;
 

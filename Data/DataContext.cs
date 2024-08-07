@@ -11,18 +11,36 @@ namespace LibraryApp.Data
         public DbSet<Book> Books { get; set; }
         public DbSet<BookCopy> BookCopies { get; set; }
         public DbSet<User> Users { get; set; }
+        public DbSet<User_BookCopy> User_BookCopies { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+
+            modelBuilder.Entity<Book>()
+                .HasMany(b => b.BookCopies)
+                .WithOne(bc => bc.Book)
+                .HasForeignKey(bc => bc.BookId);
+
             modelBuilder.Entity<BookCopy>()
-                .HasOne(bc => bc.User)
-                .WithOne(u => u.BookCopy)
-                .HasForeignKey<BookCopy>(bc => bc.UserId);
+                .HasMany(bc => bc.User_BookCopies)
+                .WithOne(ubc => ubc.BookCopy)
+                .HasForeignKey(ubc => ubc.BookCopyId);
 
             modelBuilder.Entity<User>()
-                .HasOne(u => u.BookCopy)
-                .WithOne(bc => bc.User)
-                .HasForeignKey<User>(u => u.BookCopyId);
+                .HasMany(u => u.User_BookCopies)
+                .WithOne(ubc => ubc.User)
+                .HasForeignKey(ubc => ubc.UserId);
+
+            modelBuilder.Entity<User_BookCopy>()
+                .HasOne(ubc => ubc.BookCopy)
+                .WithMany(bc => bc.User_BookCopies)
+                .HasForeignKey(ubc => ubc.BookCopyId);
+
+            modelBuilder.Entity<User_BookCopy>()
+                .HasOne(ubc => ubc.User)
+                .WithMany(u => u.User_BookCopies)
+                .HasForeignKey(ubc => ubc.UserId);
+
 
             base.OnModelCreating(modelBuilder);
         }
