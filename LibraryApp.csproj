@@ -7,20 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Views\Book\**" />
-    <Content Remove="Views\Book\**" />
-    <EmbeddedResource Remove="Views\Book\**" />
-    <None Remove="Views\Book\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="Views\Book\Create.cshtml" />
-    <None Include="Views\Book\Delete.cshtml" />
-    <None Include="Views\Book\Details.cshtml" />
-    <None Include="Views\Book\Edit.cshtml" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.7" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.7">
       <PrivateAssets>all</PrivateAssets>

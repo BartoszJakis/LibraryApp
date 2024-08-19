@@ -10,22 +10,23 @@ using LibraryApp.Models;
 
 namespace LibraryApp.Controllers
 {
-    public class BookController : Controller
+    public class BookCopyController : Controller
     {
         private readonly DataContext _context;
 
-        public BookController(DataContext context)
+        public BookCopyController(DataContext context)
         {
             _context = context;
         }
 
-        // GET: Book
+        // GET: BookCopy
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Books.ToListAsync());
+            var dataContext = _context.BookCopies.Include(b => b.Book);
+            return View(await dataContext.ToListAsync());
         }
 
-        // GET: Book/Details/5
+        // GET: BookCopy/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -33,39 +34,42 @@ namespace LibraryApp.Controllers
                 return NotFound();
             }
 
-            var book = await _context.Books
+            var bookCopy = await _context.BookCopies
+                .Include(b => b.Book)
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (book == null)
+            if (bookCopy == null)
             {
                 return NotFound();
             }
 
-            return View(book);
+            return View(bookCopy);
         }
 
-        // GET: Book/Create
+        // GET: BookCopy/Create
         public IActionResult Create()
         {
+            ViewData["BookId"] = new SelectList(_context.Books, "Id", "Id");
             return View();
         }
 
-        // POST: Book/Create
+        // POST: BookCopy/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Title,Author,ISBN,Description")] Book book)
+        public async Task<IActionResult> Create([Bind("Id,isAvailable,BookId")] BookCopy bookCopy)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(book);
+                _context.Add(bookCopy);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(book);
+            ViewData["BookId"] = new SelectList(_context.Books, "Id", "Id", bookCopy.BookId);
+            return View(bookCopy);
         }
 
-        // GET: Book/Edit/5
+        // GET: BookCopy/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -73,22 +77,23 @@ namespace LibraryApp.Controllers
                 return NotFound();
             }
 
-            var book = await _context.Books.FindAsync(id);
-            if (book == null)
+            var bookCopy = await _context.BookCopies.FindAsync(id);
+            if (bookCopy == null)
             {
                 return NotFound();
             }
-            return View(book);
+            ViewData["BookId"] = new SelectList(_context.Books, "Id", "Id", bookCopy.BookId);
+            return View(bookCopy);
         }
 
-        // POST: Book/Edit/5
+        // POST: BookCopy/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Title,Author,ISBN,Description")] Book book)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,isAvailable,BookId")] BookCopy bookCopy)
         {
-            if (id != book.Id)
+            if (id != bookCopy.Id)
             {
                 return NotFound();
             }
@@ -97,12 +102,12 @@ namespace LibraryApp.Controllers
             {
                 try
                 {
-                    _context.Update(book);
+                    _context.Update(bookCopy);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!BookExists(book.Id))
+                    if (!BookCopyExists(bookCopy.Id))
                     {
                         return NotFound();
                     }
@@ -113,10 +118,11 @@ namespace LibraryApp.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(book);
+            ViewData["BookId"] = new SelectList(_context.Books, "Id", "Id", bookCopy.BookId);
+            return View(bookCopy);
         }
 
-        // GET: Book/Delete/5
+        // GET: BookCopy/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -124,34 +130,35 @@ namespace LibraryApp.Controllers
                 return NotFound();
             }
 
-            var book = await _context.Books
+            var bookCopy = await _context.BookCopies
+                .Include(b => b.Book)
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (book == null)
+            if (bookCopy == null)
             {
                 return NotFound();
             }
 
-            return View(book);
+            return View(bookCopy);
         }
 
-        // POST: Book/Delete/5
+        // POST: BookCopy/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var book = await _context.Books.FindAsync(id);
-            if (book != null)
+            var bookCopy = await _context.BookCopies.FindAsync(id);
+            if (bookCopy != null)
             {
-                _context.Books.Remove(book);
+                _context.BookCopies.Remove(bookCopy);
             }
 
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool BookExists(int id)
+        private bool BookCopyExists(int id)
         {
-            return _context.Books.Any(e => e.Id == id);
+            return _context.BookCopies.Any(e => e.Id == id);
         }
     }
 }
